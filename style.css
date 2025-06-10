@@ -1,0 +1,22 @@
+.header-section {
+  background: url('your-image.jpg') center center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+  z-index: 1;
+}
+
+.header-section h1,
+.header-section p {
+  position: relative;
+  z-index: 2;
+}
+
+
